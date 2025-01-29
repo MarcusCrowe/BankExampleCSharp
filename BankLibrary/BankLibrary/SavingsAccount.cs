@@ -12,13 +12,12 @@ namespace BankLibrary
         public SavingsAccount(string accountNumber, string accountName, decimal initialBalance, decimal interestRate) :
             base(accountNumber, accountName, initialBalance)
         {
-            InterestRate = InterestRate;
+            InterestRate = interestRate;
         }
         public void ApplyInterest()
         {
             decimal interestPayment = Balance * InterestRate;
             this.Deposit(interestPayment);
         }
-      
     }
 }

@@ -8,10 +8,10 @@ namespace BankLibrary
 {
     public class HighInterestSavingsAccount : SavingsAccount
     {
-        public HighInterestSavingsAccount(string accountNumber, decimal initialBalanace, decimal interestRate) :
-            base(accountNumber, initialBalanace, interestRate)
+        public HighInterestSavingsAccount(string accountNumber, string accountName, decimal initialBalanace, decimal interestRate) :
+            base(accountNumber, accountName, initialBalanace, interestRate)
         {
-
+            
         }
         public void ApplyBonusInterest(decimal bonusRate)
         {
